@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"  href="style.css">
+	<title>Portfolio web site design</title>
+</head>
+<body>
+
+    <div class="container">
+    	<div class="navbar">
+    		<div class="logo">
+    			<img src="images/logo.png">
+    		</div>
+    		<nav>
+    			<ul>
+    				<li><a href="">About</a></li>
+    				<li><a href="">Library</a></li>
+    				<li><a href="">Blog</a></li>
+    				<li><a href="">Contact</a></li>
+    			</ul>
+    		</nav>
+    		<div class="user">
+    			<p>EL MAHDI EL-BAZ</p>
+    			<img src="images/user.png">
+    		</div>
+    	</div>
+    	<div class="slidebar">
+    		<img src="images/search.png" class="search-icon">
+    		<div class="social-links">
+    			<img src="images/fb.png">
+    			<img src="images/pt.png">
+    			<img src="images/tw.png">
+    		</div>
+    		<img src="images/info.png" class="info-icon">
+    	</div>
+    	<div class="msg-container">
+    		<div id="slider">
+    			<div class="msg-col">
+    				<h1>The Reasoning</h1>
+    				<p>Web design is important because it impacts how your audience perceives your brand. The impression you make on them can either get them to remain on your page and learn about your business or leave your page and turn to a competitor. A good web design helps you keep your leads on your page.</p>
+    			<a href="">Learn more</a>
+    			</div>
+    			<div class="msg-col">
+    				<h1>The Knowledge</h1>
+    				<p>Knowledge of coding languages (e.g. C++, Java, JavaScript) and frameworks/systems (e.g. AngularJS, Git)
+    				Experience with databases and Object-Relational Mapping (ORM) frameworks (e.g. Hibernate)</p>
+    			<a href="">Learn more</a>
+    			</div>
+    			<div class="msg-col">
+    				<h1>The Integration</h1>
+    				<p>The profession of web integrator
+It makes a website functional by transforming the different pages (generally drawn using Sketch or Photoshop software) into HTML / CSS format. To do this, it uses style sheets in CSS format and, if necessary, achieves visual effects with JavaScript.</p>
+    			<a href="">Learn more</a>
+    			</div>
+    			<div class="msg-col">
+    				<h1>The Learning</h1>
+    				<p>Despite the real advantages that come with an organized education, web development is still a field in which concrete skills can trump education when it comes to employment opportunities. Companies want employees who can produce, and how or where something was learned is secondary to simply being able to do it. Prospective web developers should have expertise in the three core programming components: HTML, CSS, and JavaScript. They should also learn about CSS and CSS frameworks such as Backbone, Bootstrap, and Foundation. Finally, to build applications, developers should be proficient in back-end languages such as Ruby, Java, PHP and tools such as Oracle and SQL Server.</p>
+    			<a href="">Learn more</a>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="controller">
+    		<div id="line1"></div>
+    		<div id="line2"></div>
+    		<div id="line3"></div>
+    		<div id="line4"></div>
+    		<div id="active"></div>
+    	</div>
+     </div>
+
+     <script>
+     	
+     	var slider = document.getElementById('slider');
+     	var active = document.getElementById('active');
+     	var line1 = document.getElementById('line1');
+     	var line2 = document.getElementById('line2');
+     	var line3 = document.getElementById('line3');
+     	var line4 = document.getElementById('line4');
+
+     	line1.onclick = function(){
+     		slider.style.transform = 'translateX(0)';
+     		active.style.top = '0px';
+     	}
+     	line2.onclick = function(){
+     		slider.style.transform = 'translateX(-25%)';
+     		active.style.top = '80px';
+     	}
+     	line3.onclick = function(){
+     		slider.style.transform = 'translateX(-50%)';
+     		active.style.top = '160px';
+     	}
+     	line4.onclick = function(){
+     		slider.style.transform = 'translateX(-75%)';
+     		active.style.top = '240px';
+     	}
+     </script>
+
+
+
+</body>
+</html>
